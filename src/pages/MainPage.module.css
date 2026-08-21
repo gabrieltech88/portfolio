@@ -3,5 +3,6 @@
     flex-direction: column;
     gap: 5rem;
     width: 100%;
-    padding: 0rem 4.875rem;
+    padding: 0rem 4.875rem 0rem 4.875rem;
+    
 }

@@ -8,9 +8,9 @@
     left: 50%;
     transform: translateX(-50%);
     z-index: 1000;
-    border-radius: var(--radius-lg);
+    border-radius: var(--radius-14);
     position: fixed;
-    padding: var(--spacing-lg) var(--spacing-xxxl);
+    padding: var(--spacing-14) var(--spacing-24);
     align-items: center;
     justify-content: space-between;
 }
@@ -18,25 +18,25 @@
 #header div:nth-child(1) {
     display: flex;
     align-items: center;
-    gap: var(--spacing-xl);
+    gap: var(--spacing-16);
 }
 
 #header div:nth-child(1) div {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-xs);
+    gap: var(--spacing-4);
 }
 
 #header div:nth-child(1) div span:nth-child(1) {
     font-family: var(--font-family-geist);
-    font-size: var(--font-size-md);
+    font-size: var(--font-size-16);
     color: var(--color-text-primary);
     font-weight: 600;
 }
 
 #header div:nth-child(1) div span:nth-child(2) {
     font-family: var(--font-family-geist);
-    font-size: var(--font-size-xs);
+    font-size: var(--font-size-12);
     color: var(--color-text-muted-50);
     font-weight: 500;
 
@@ -49,24 +49,24 @@
 
 #header nav {
     display: flex;
-    gap: var(--spacing-xxxxl);
+    gap: var(--spacing-32);
 }
 
 #header nav a {
     text-decoration: none;
     font-family: var(--font-family-geist);
-    font-size: var(--font-size-sm);
+    font-size: var(--font-size-14);
     color: var(--color-text-secondary);
 }
 #header div:nth-child(3) {
     display: flex;
     flex-direction: row;
-    gap: var(--spacing-xxl);
+    gap: var(--spacing-20);
 }
 
 #header div:nth-child(3) div {
     display: flex;
-    gap: var(--spacing-md);
+    gap: var(--spacing-12);
     align-items: center;
     justify-content: center;
 }
@@ -84,15 +84,15 @@
 #header div:nth-child(3) .button {
     font-family: var(--font-family-geist);
     font-weight: 600;
-    font-size: var(--font-size-md);
+    font-size: var(--font-size-16);
     background-color: var(--color-primary);
     border: none;
     color: var(--color-text-primary);
     border-radius: 0.625rem;
-    padding: var(--spacing-sm) var(--spacing-xxl);
+    padding: var(--spacing-8) var(--spacing-20);
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: var(--spacing-sm);
+    gap: var(--spacing-8);
 }
 
