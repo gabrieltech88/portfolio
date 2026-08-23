@@ -25,10 +25,10 @@ function Header() {
             <div>
                 <div>
                     <a target="_blank" rel="noreferrer" className={styles.socialLinks}>
-                        <FaGithub size={20} color="#b5b4ba"/>
+                        <FaGithub size={20} className={styles.socialIcon}/>
                     </a>
                     <a target="_blank" rel="noreferrer" className={styles.socialLinks}>
-                        <FaLinkedin size={20} color="#b5b4ba"/>
+                        <FaLinkedin size={20} className={styles.socialIcon}/>
                     </a>
                 </div>
                 <a className={styles.button}>Baixar Currículo <RiDownload2Line size={16} strokeWidth={0.875}/></a>

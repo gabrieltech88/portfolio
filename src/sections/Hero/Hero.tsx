@@ -19,25 +19,27 @@ function Hero() {
                 </div>
                 <div className={styles.containerHeroSocial}>
                     <a>
-                        <FaGithub/>
-
+                        <FaGithub size={20} className={styles.linkSocial}/>
                     </a>
                     <a>
-                        <FaLinkedin/>
+                        <FaLinkedin size={20} className={styles.linkSocial}/>
                     </a>
                     <a>
-                        <HiOutlineMail/>
+                        <HiOutlineMail size={20} className={styles.linkSocial}/>
                     </a>
                 </div>
             </div>
             <div className={styles.heroImage}>
-                <div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
+                <div className={styles.searchBar}>
+                    <div className={styles.circles}>
+                        <div className={styles.circle}></div>
+                        <div className={styles.circle}></div>
+                        <div className={styles.circle}></div>
+                    </div>
+                    
                     <span>gabrielramos.com</span>
                 </div>
-                <img/>
+                <img src="" />
             </div>
         </section>
     )

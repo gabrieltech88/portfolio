@@ -81,6 +81,16 @@
     color: var(--color-primary);
 }
 
+#header div:nth-child(3) div .socialLinks .socialIcon {
+    color: var(--color-text-secondary);
+    transition: transform 0.2s ease;
+}
+
+#header div:nth-child(3) div .socialLinks .socialIcon:hover {
+    color: var(--color-text-primary);
+    transform: scale(1.1);
+}
+
 #header div:nth-child(3) .button {
     font-family: var(--font-family-geist);
     font-weight: 600;
