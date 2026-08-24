@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: repeat(23, 1fr);
     gap: 3rem;
+    
 }
 
 .experiences .introductionExperiences {
@@ -56,6 +57,7 @@
 
 .experiences .introductionExperiences .cardIntroduction .area {
     background-color: var(--color-background-muted);
+    font-family: var(--font-family-space);
     border: var(--border-primary);
     border-radius: var(--radius-4);
     padding: var(--spacing-4) var(--spacing-8);
@@ -101,5 +103,44 @@
 
 .experiences .containerExperiences {
     grid-column: span 17;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    padding-left: 2rem;
+}
+.containerExperiences::before {
+    content: "";
+    position: absolute;
+
+    left: 4px;
+    top: 0;
+    bottom: 0;
+
+    width: 1px;
+    background-color: var(--color-border-primary);
+}
+
+.timelineItem {
+    position: relative;
+}
+
+/* bolinha */
+.timelineItem::before {
+    content: "";
+    position: absolute;
+
+    left: calc(-2rem + 1px);
+    top: 10px;
+
+    width: 7px;
+    height: 7px;
+
+    border-radius: 50%;
+    background-color: var(--color-primary);
+
+    z-index: 1;
 }
 

@@ -2,7 +2,7 @@ import styles from "./HeaderSection.module.css";
 
 interface HeaderSectionProps {
     title: string,
-    subtitle: string,
+    subtitle?: string,
 }
 
 function HeaderSection({ title, subtitle }: HeaderSectionProps) {

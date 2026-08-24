@@ -1,0 +1,78 @@
+.experience {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-foreground);
+    padding: var(--spacing-24);
+    border: var(--border-primary);
+    border-radius: var(--radius-8);
+    gap: var(--spacing-8);
+    transition: all 0.3s ease;;
+}
+
+.experience:hover {
+    background-color: transparent;
+}
+
+.experience:hover  > div:nth-child(1) > .role {
+    color: var(--color-primary);
+}
+
+.experience > div:nth-child(1) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.experience > div:nth-child(1) > .role {
+    font-size: var(--font-size-16);
+    font-weight: 600;
+    font-family: var(--font-family-geist);
+    color: var(--color-text-primary);
+}
+
+.experience > div:nth-child(1) > .date {
+    padding: var(--spacing-4) var(--spacing-8);
+    font-size: 10px;
+    font-family: var(--font-family-geist);
+    background-color: var(--color-background-muted);
+    border: var(--border-primary);
+    border-radius: var(--radius-4);
+    color: var(--color-text-muted);
+}
+
+.experience > .company {
+    font-size: var(--font-size-16);
+    font-weight: 500;
+    font-family: var(--font-family-geist);
+    color: var(--color-text-secondary);
+}
+
+.experience > .description {
+    margin-top: var(--spacing-8);
+    font-size: var(--font-size-16);
+    line-height: 26px;
+    font-family: var(--font-family-geist);
+    color: var(--color-text-secondary);
+}
+
+.experience > .skillsContainer  {
+    display: flex;
+    margin-top: var(--spacing-16);
+    flex-direction: row;
+    gap: var(--spacing-8);
+    flex-wrap: wrap;
+    
+}
+
+.experience > .skillsContainer > .skill {
+    background-color: var(--color-background-muted);
+    padding: var(--spacing-4) var(--spacing-8);
+    border: var(--border-primary);
+    border-radius: var(--radius-4);
+    color: var(--color-text-secondary);
+    font-size: 11px;
+    font-family: var(--font-family-space);
+}
+
+
+
