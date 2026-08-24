@@ -1,11 +1,13 @@
 :root {
     --color-background: #121315;
-    --color-background-card: #1B1C1E;
+    --color-background-muted: #292a2c;
+    --color-background-section: #1B1C1E;
     --color-foreground: #0D0E10;
     
     --color-primary: #FF6b00;
     
-    --color-text-primary: #fff;
+    --color-text-white: #fff;
+    --color-text-primary: #E3E2E5;
     --color-text-secondary: #b5b4ba;
     --color-text-muted: #98999F;
     --color-text-muted-50: rgba(152, 153, 159, 0.5);
@@ -24,6 +26,7 @@
     --spacing-24: 1.5rem;
     --spacing-32: 2rem;
     
+    --radius-4: 0.25rem;
     --radius-8: 0.5rem;
     --radius-12: 0.75rem;
     --radius-14: 0.875rem;

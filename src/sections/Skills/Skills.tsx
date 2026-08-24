@@ -5,6 +5,8 @@ import { FaLaptopCode } from "react-icons/fa";
 import { LuAppWindow } from "react-icons/lu";
 import { TbDatabase } from "react-icons/tb";
 import { IoMdCloudOutline } from "react-icons/io";
+import { BsCardChecklist, BsDiagram3 } from "react-icons/bs";
+import CardSkill from "@/components/CardSkill/CardSkill.tsx";
 
 
 
@@ -28,7 +30,8 @@ function Skills() {
         {
             icon: <LuAppWindow size={20} />,
             title: "Frontend",
-            content: "Construção de interfaces modernas, responsivas e integração com APIs.",
+            content: "Construção de interfaces modernas,\n" + 
+                    "responsivas e integração com APIs.",
             skills: [
                 "React",
                 "TypeScript",
@@ -64,20 +67,32 @@ function Skills() {
             ]
         },
         {
-            icon: <IoMdCloudOutline size={20} />,
-            title: "Infra & Redes",
-            content: "Containerização, publicação de\n" +
-                "aplicações e fundamentos de\n" +
-                "infraestrutura e comunicação.",
+            icon: <BsCardChecklist size={20} />,
+            title: "Testes",
+            content: "Testes automatizados para garantir\n" +
+                "estabilidade, confiabilidade e facilitar a\n" +
+                "manutenção.",
             skills: [
-                "Docker",
-                "Linux",
-                "Nginx",
-                "Http",
-                "Roteamento",
+                "xUnit",
+                "MOQ",
+                "Bogus",
+                "Jest",
+                "Selenium",
             ]
         },
-        
+        {
+            icon: <BsDiagram3 size={20} />,
+            title: "Arquitetura",
+            content: "Organização de sistemas com baixo\n" +
+                "acoplamento, código limpo e sustentável.",
+            skills: [
+                "Clean Arch",
+                "DDD",
+                "CQRS",
+                "DDD",
+                "Microsserviços",
+            ]
+        },
         
     ]
     
@@ -85,8 +100,10 @@ function Skills() {
     return (
         <SectionBackground id="skills" className={styles.skills}>
             <HeaderSection title="Tecnologias e Habilidades" subtitle="Principais stacks e habilidades técnicas" />
-            <div>
-                
+            <div className={styles.mainSkills}>
+                {skillsForCards.map((skill) => (
+                    <CardSkill title={skill.title} content={skill.content} skills={skill.skills} icon={skill.icon} />
+                ))}
             </div>
         </SectionBackground>
     )

@@ -5,6 +5,8 @@
     border: 1px solid var(--color-border-primary);
     border-radius: var(--spacing-12);
     background-color: var(--color-foreground);
+    min-width: 0;
+    width: 100%;
 }
 
 #cardSkill:hover {
@@ -20,4 +22,37 @@
     width: 2.5rem;
     height: 2.5rem;
     color: var(--color-primary);
+    margin-bottom: var(--spacing-16);
 }
+
+#cardSkill .titleCardSkill {
+    color: --color-text-primary;
+    font-size: var(--font-size-16);
+    font-family: var(--font-family-geist);
+    margin-bottom: var(--spacing-12);
+}
+
+#cardSkill .contentCardSkill {
+    margin-bottom: var(--spacing-24);
+    color: var(--color-text-secondary);
+    font-size: var(--font-size-16);
+    font-family: var(--font-family-geist);
+    line-height: var(--spacing-24);
+}
+
+#cardSkill .skillsCard {
+    margin-top: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--spacing-8);
+}
+
+#cardSkill .skillCard .skill {
+    background-color: --color-background-muted;
+    font-size: 10px;
+    color: var(--color-text-muted);
+    border-radius: var(--radius-4);
+}
+
+

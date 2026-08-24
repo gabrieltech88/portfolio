@@ -6,7 +6,7 @@
 }
 
 #headerSection h1 {
-    color: #E3E2E5;
+    color: --color-text-primary;
     font-size: var(--font-size-24);
     font-family: var(--font-family-geist);
     font-weight: 600;

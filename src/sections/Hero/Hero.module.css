@@ -30,7 +30,7 @@
 
 .hero .heroContent .heroTitle {
     font-size: var(--font-size-32);
-    color: var(--color-text-primary);
+    color: var(--color-text-white);
     font-family: var(--font-family-geist);
     font-weight: 600;
 }
@@ -38,7 +38,7 @@
 .hero .heroContent .heroSubtitle {
     font-family: var(--font-family-geist);
     font-size: var(--font-size-20);
-    color: var(--color-text-primary);
+    color: var(--color-text-white);
     font-weight: 500;
 }
 
@@ -58,7 +58,7 @@
 
 .hero .heroContent .containerHeroButtons a:nth-child(1) {
     background-color: var(--color-primary);
-    color: var(--color-text-primary);
+    color: var(--color-text-white);
     font-weight: 600;
     font-size: var(--font-size-16);
     font-family: var(--font-family-geist);
@@ -73,9 +73,9 @@
 .hero .heroContent .containerHeroButtons a:nth-child(2) {
     border-radius: var(--radius-8);
     border: 1px solid var(--color-border-primary);
-    background-color: #292a2c;
+    background-color: --color-background-muted;
     padding: var(--spacing-8) var(--spacing-24);
-    color: #E3E2E5;
+    color: --color-text-primary;
     font-weight: 600;
     font-size: var(--font-size-16);
     font-family: var(--font-family-geist);
@@ -95,7 +95,7 @@
     height: 2.5rem;
     width: 2.5rem;
     text-decoration: none;
-    background-color: #292A2C;
+    background-color: --color-background-muted;
     border-radius: var(--radius-8);
     border: 1px solid var(--color-border-primary); 
     display: flex;
@@ -124,7 +124,7 @@
     position: relative;
     align-items: center;
     flex-direction: row;
-    background-color: #292A2C;
+    background-color: --color-background-muted;
     padding: 10px var(--spacing-16);
     border: 1px solid var(--color-border-primary);
     border-top-left-radius: var(--radius-12);
