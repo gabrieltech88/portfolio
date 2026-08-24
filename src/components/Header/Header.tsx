@@ -17,10 +17,10 @@ function Header() {
             <nav>
                 <a href="#hero">Sobre</a>
                 <a href="#skills">Skills</a>
-                <a href="">Projetos</a>
-                <a href="">Experiência</a>
-                <a href="">Formação</a>
-                <a href="">Contato</a>
+                <a href="#projects">Projetos</a>
+                <a href="#experiencia">Experiência</a>
+                <a href="#formacao">Formação</a>
+                <a href="#contato">Contato</a>
             </nav>
             <div>
                 <div>

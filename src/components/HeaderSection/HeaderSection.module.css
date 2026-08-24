@@ -3,6 +3,7 @@
     flex-direction: column;
     width: 100%;
     gap: var(--spacing-16);
+    flex-wrap: wrap;
 }
 
 #headerSection h1 {

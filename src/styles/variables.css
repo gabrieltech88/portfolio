@@ -15,6 +15,9 @@
     --color-border-primary: #343537;
     --color-border-secondary: rgba(255, 255, 255, 0.1);
     
+    --border-primary: 1px solid var(--color-border-primary);
+    --border-secondary: 1px solid var(--color-border-secondary);
+    
     --color-primary-overlay: rgb(255, 107, 0, 0.1);
     
     --spacing-4: 0.25rem;
