@@ -1,0 +1,20 @@
+#headerSection {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: var(--spacing-16);
+}
+
+#headerSection h1 {
+    color: #E3E2E5;
+    font-size: var(--font-size-24);
+    font-family: var(--font-family-geist);
+    font-weight: 600;
+    
+}
+
+#headerSection h2 {
+    font-size: var(--font-size-16);
+    font-family: var(--font-family-geist);
+    color: var(--color-text-secondary);
+}
