@@ -15,8 +15,8 @@ function Header() {
                 </div>
             </div>
             <nav>
-                <a href="">Sobre</a>
-                <a href="">Skills</a>
+                <a href="#hero">Sobre</a>
+                <a href="#skills">Skills</a>
                 <a href="">Projetos</a>
                 <a href="">Experiência</a>
                 <a href="">Formação</a>

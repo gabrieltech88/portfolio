@@ -2,11 +2,21 @@
     display: flex;
     flex-direction: column;
     gap: 2.5rem;
+    height: fit-content;
 }
 
 .skills .mainSkills {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     gap: var(--spacing-24);
+}
+
+.skills .miniSkills {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 14px;
+    align-items: center;
+    justify-content: center;
 }

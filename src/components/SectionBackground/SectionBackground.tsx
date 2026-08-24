@@ -8,7 +8,7 @@ interface SectionBackgroundProps {
 
 function SectionBackground({ children, id, className }: SectionBackgroundProps) {
     return(
-        <section id={`styles.${id}`} className={`${styles.sectionBackground} ${className}`}>
+            <section id={id} className={`${styles.sectionBackground} ${className}`}>
             {children}
         </section>
     )
