@@ -19,8 +19,8 @@ function Header() {
                 <a href="#skills">Skills</a>
                 <a href="#projects">Projetos</a>
                 <a href="#experiencia">Experiência</a>
-                <a href="#formacao">Formação</a>
-                <a href="#contato">Contato</a>
+                <a href="#background">Formação</a>
+                <a href="#contact">Contato</a>
             </nav>
             <div>
                 <div>
