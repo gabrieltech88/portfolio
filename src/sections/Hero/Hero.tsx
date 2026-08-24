@@ -1,10 +1,11 @@
 import {FaGithub, FaLinkedin} from "react-icons/fa";
 import {HiOutlineMail} from "react-icons/hi";
+import SectionBackground from "@/components/SectionBackground/SectionBackground.tsx";
 import styles from "./Hero.module.css";
 
 function Hero() {
     return (
-        <section id={styles.hero}>
+        <SectionBackground id="hero" className={styles.hero}>
             <div className={styles.heroContent}>
                 <div>
                     <span>DESENVOLVEDOR FULLSTACK</span>
@@ -41,7 +42,7 @@ function Hero() {
                 </div>
                 <img src="" />
             </div>
-        </section>
+        </SectionBackground>
     )
 }
 

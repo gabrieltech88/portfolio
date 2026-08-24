@@ -1,0 +1,6 @@
+.sectionBackground {
+    border-radius: var(--radius-16);
+    border: 1px solid var(--color-border-primary);
+    background-color: var(--color-background-card);
+    padding: 3rem;
+}
