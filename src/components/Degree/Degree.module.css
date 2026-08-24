@@ -1,0 +1,150 @@
+.degree {
+    display: flex;
+    flex-direction: column;
+    padding: var(--spacing-16) var(--spacing-8);
+    border-radius: var(--radius-8);
+    width: 100%;
+    gap: var(--spacing-4);
+    border-bottom: 1px solid var(--color-border-secondary);
+    transition: all 0.3s ease;
+}
+
+.degree:hover {
+    background-color: #121315;
+    
+}
+
+.degree:hover  .header > span:first-child  {
+    color: var(--color-primary);
+}
+
+.degreeLast:hover  .header > span:first-child  {
+    color: var(--color-primary);
+}
+
+
+
+
+.degree > .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.degree > .header > span:first-child {
+    font-size: var(--font-size-16);
+    font-family: var(--font-family-geist);
+    color: var(--color-text-primary);
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.degree > .header > span:nth-child(2) {
+    font-size: var(--spacing-12);
+    font-family: var(--font-family-geist);
+    color: var(--color-primary);
+    padding: var(--spacing-4) var(--spacing-8);
+    border-radius: var(--radius-4);
+    background-color: var(--color-primary-overlay);
+    text-align: center ;
+    line-height: normal;
+}
+
+.degree > .institution {
+    color: var(--color-text-secondary);
+    font-size: var(--font-size-14);
+    font-family: var(--font-family-geist);
+    line-height: 21px;
+}
+
+.degree:hover > .institution {
+    color: var(--color-text-primary);
+}
+
+.degreeLast:hover > .institution {
+    color: var(--color-text-primary);
+}
+
+.degree > .description {
+    color: var(--color-text-secondary);
+    font-size: var(--font-size-12);
+    font-family: var(--font-family-geist);
+    display: flex;
+    flex-direction: row;
+    gap: var(--spacing-12);
+    align-items: center;
+}
+
+.degree .circle {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.degreeLast {
+    display: flex;
+    flex-direction: column;
+    padding: var(--spacing-16) var(--spacing-8);
+    border-radius: var(--radius-8);
+    width: 100%;
+    gap: var(--spacing-4);
+    border-bottom: 1px solid var(--color-border-secondary);
+    transition: all 0.3s ease;
+}
+
+.degreeLast:hover {
+    background-color: #121315;
+    
+}
+
+
+
+.degreeLast > .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.degreeLast > .header > span:first-child {
+    font-size: var(--font-size-16);
+    font-family: var(--font-family-geist);
+    color: var(--color-text-primary);
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.degreeLast > .header > span:nth-child(2) {
+    font-size: var(--spacing-12);
+    font-family: var(--font-family-geist);
+    color: var(--color-primary);
+    padding: var(--spacing-4) var(--spacing-8);
+    border-radius: var(--radius-4);
+    background-color: var(--color-primary-overlay);
+    text-align: center ;
+    line-height: normal;
+}
+
+.degreeLast > .institution {
+    color: var(--color-text-secondary);
+    font-size: var(--font-size-14);
+    font-family: var(--font-family-geist);
+    line-height: 21px;
+}
+
+.degreeLast > .description {
+    color: var(--color-text-secondary);
+    font-size: var(--font-size-12);
+    font-family: var(--font-family-geist);
+    display: flex;
+    flex-direction: row;
+    gap: var(--spacing-12);
+    align-items: center;
+}
+
+.degreeLast .circle {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+}
