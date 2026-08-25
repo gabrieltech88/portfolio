@@ -183,6 +183,8 @@
         padding: var(--spacing-12) var(--spacing-16);
 
         border-radius: 0;
+        border: none;
+        border-bottom: 1px solid var(--color-border-secondary);;
     }
 
 
