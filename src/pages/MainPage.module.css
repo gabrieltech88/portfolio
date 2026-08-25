@@ -6,3 +6,11 @@
     padding: 0rem 4.875rem 0rem 4.875rem;
     
 }
+
+@media (max-width: 768px) {
+    
+    #main {
+        padding: 0rem 1rem 0rem 1rem;
+    }
+   
+}

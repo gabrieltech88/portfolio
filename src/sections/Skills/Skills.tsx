@@ -96,7 +96,7 @@ function Skills() {
 
     return (
         <SectionBackground id="skills" className={styles.skills}>
-            <HeaderSection title="Tecnologias e Habilidades" subtitle="Principais stacks e habilidades técnicas"/>
+            <HeaderSection title="Tecnologias e Habilidades" subtitle="Principais stacks e habilidades técnicas" className={styles.headerSectionOrder}/>
             <div className={styles.mainSkills}>
                 {skillsForCards.map((skill) => (
                     <CardSkill title={skill.title} content={skill.content} skills={skill.skills} icon={skill.icon}/>

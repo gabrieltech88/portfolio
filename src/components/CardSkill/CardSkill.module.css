@@ -59,3 +59,14 @@
 }
 
 
+@media (max-width: 768px) {
+    #cardSkill .contentCardSkill {
+        font-size: var(--font-size-12);
+        line-height: var(--spacing-16);
+    }
+
+    #cardSkill .skillsCard {
+        display: none;
+    }
+}
+

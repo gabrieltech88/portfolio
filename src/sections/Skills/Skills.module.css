@@ -5,11 +5,17 @@
     height: fit-content;
 }
 
+.skills .headerSectionOrder {
+    order: 1;
+
+}
+
 .skills .mainSkills {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     grid-template-rows: repeat(2, 1fr);
     gap: var(--spacing-24);
+    order: 2;
 }
 
 .skills .miniSkills {
@@ -19,4 +25,21 @@
     gap: 14px;
     align-items: center;
     justify-content: center;
+    order: 3;
+}
+
+@media (max-width: 768px) { 
+    .skills .mainSkills {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+    
+    .skills .miniSkills {
+        order: 2
+    }
+    
+    .skills .mainSkills {
+        order: 3;
+    }
 }

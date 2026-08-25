@@ -74,5 +74,15 @@
     font-family: var(--font-family-space);
 }
 
-
-
+@media (max-width: 768px) {
+    .experience > div:nth-child(1) {
+        flex-direction: column;
+        gap: var(--spacing-12);
+    }
+    .experience > div:nth-child(1) > .date {
+        width: fit-content;
+    }
+    .experience > .company {    
+        margin-top: var(--spacing-8);
+    }
+}

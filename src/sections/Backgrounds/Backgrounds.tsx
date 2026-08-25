@@ -6,8 +6,8 @@ import { TbWorld } from "react-icons/tb";
 import Degree from "@/components/Degree/Degree.tsx";
 import Language from "@/components/Language/Language.tsx";
 import Course from "@/components/Course/Course.tsx";
-import {Link} from "react-router";
-
+import { useRef } from "react";
+import CoursesModal from "@/components/CoursesModal/CoursesModal.tsx";
 
 function Backgrounds() {
     const degrees = [
@@ -77,6 +77,13 @@ function Backgrounds() {
             institution: "Alura"
         }
     ]
+
+  
+    const dialogRef = useRef<HTMLDialogElement>(null);
+    function openModal() {
+        dialogRef.current?.showModal();
+   
+    }
     
     return (
         <SectionBackground id="background" className={styles.backgrounds}>
@@ -118,8 +125,12 @@ function Backgrounds() {
                         <Course name={course.name} institution={course.institution} />
                     ))}
                 </div>
-                <Link to="/" className={styles.linkToPageCourses}>Ver todos os cursos <FaArrowRight size={18} strokeWidth={0.5}/> </Link>
+                <button className={styles.linkToPageCourses} onClick={openModal}>Ver todos os cursos <FaArrowRight size={18} strokeWidth={0.5}/> </button>
             </div>
+
+        
+            <CoursesModal  dialogRef={dialogRef}/>
+            
         </SectionBackground>
     )
 }

@@ -147,3 +147,9 @@
     z-index: 1;
 }
 
+@media (max-width: 768px) { 
+    .experiences {
+        display: flex;
+        flex-direction: column;
+    }
+}

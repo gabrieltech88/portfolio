@@ -16,8 +16,8 @@ function Hero() {
 
                 </div>
                 <div className={styles.containerHeroButtons}>
-                    <a>Ver projetos</a>
-                    <a>Entrar em contato <FaArrowRight /></a>
+                    <a href="#projects">Ver projetos</a>
+                    <a href="mailto:gabrieltech@gmail.com">Entrar em contato <FaArrowRight /></a>
                 </div>
                 <div className={styles.containerHeroSocial}>
                     <a href="https://github.com/gabrieltech88" target="_blank" rel="noreferrer">
@@ -26,7 +26,7 @@ function Hero() {
                     <a href="https://www.linkedin.com/in/gabriel-ramos-a4524526a" target="_blank" rel="noreferrer">
                         <FaLinkedin size={20} className={styles.linkSocial}/>
                     </a>
-                    <a>
+                    <a href="mailto:gabrieltech@gmail.com">
                         <HiOutlineMail size={20} className={styles.linkSocial}/>
                        
                     </a>

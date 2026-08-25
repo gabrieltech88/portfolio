@@ -102,6 +102,9 @@
     color: var(--color-primary);
     text-decoration: none;
     transition: all 0.3s ease;
+    background-color: transparent;
+    border: none;
+    width: fit-content;
 }
 
 .backgrounds .linkToPageCourses:hover {
@@ -109,4 +112,20 @@
     color: #fd8024;
 }
 
+@media (max-width: 768px) { 
+    .backgrounds {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .backgrounds .degreesAndLanguages {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .backgrounds .courses .cardsCourses {
+        display: flex;
+        flex-direction: column;
+    }
+}
 

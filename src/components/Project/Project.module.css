@@ -26,7 +26,7 @@
 
 .project .content span:nth-child(1) {
     color: var(--color-primary);
-    font-family: var(--font-family-geist);
+    font-family: var(--font-family-space);
     font-size: var(--font-size-12);
     margin-bottom: var(--spacing-12);
 }
@@ -69,14 +69,16 @@
     color: var(--color-primary);
     display: flex;
     align-items: center;
-    font-size: var(--font-size-16);
-    font-weight: 600;
+    font-size: var(--font-size-14);
+    font-weight: 500;
     font-family: var(--font-family-geist);
     gap: var(--spacing-8);
+    transition: all 0.3s ease;
 }
 
 .project .content a:hover {
-    text-decoration: underline;
+    gap: var(--spacing-14);
+    color: #FF8C52;
 }
 
 .project .containerImage {
@@ -93,4 +95,11 @@
     width: 100%;
     object-fit: cover;
     display: block;
+}
+
+@media (max-width: 768px) { 
+    .project {
+        display: flex;
+        flex-direction: column;
+    }
 }

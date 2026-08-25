@@ -14,20 +14,6 @@ function Projects() {
             image: rapidFrotaImage,
             type: "01 / ENTERPRISE ERP"
         },
-        {
-            title: "Rapid Frota",
-            description: "O sistema foi desenvolvido para auxiliar a gestão da frota da Rapid Fibra, centralizando o acompanhamento dos veículos e seus checklists. A aplicação permite registrar informações como quilometragem, observações, responsáveis e aprovações, além de contar com autenticação e controle de acesso por perfis, tornando o gerenciamento da frota mais organizado e confiável.",
-            stack: ["C#", ".NET 8", "MySQL", "React"],
-            image: rapidFrotaImage,
-            type: "02 / ENTERPRISE ERP"
-        },
-        {
-            title: "Rapid Frota",
-            description: "O sistema foi desenvolvido para auxiliar a gestão da frota da Rapid Fibra, centralizando o acompanhamento dos veículos e seus checklists. A aplicação permite registrar informações como quilometragem, observações, responsáveis e aprovações, além de contar com autenticação e controle de acesso por perfis, tornando o gerenciamento da frota mais organizado e confiável.",
-            stack: ["C#", ".NET 8", "MySQL", "React"],
-            image: rapidFrotaImage,
-            type: "03 / ENTERPRISE ERP"
-        },
     ]
 
 

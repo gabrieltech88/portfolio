@@ -1,0 +1,254 @@
+#coursesModal {
+    height: 90vh;
+    width: 90%;
+    z-index: 2000;
+
+    border-radius: var(--radius-12);
+    padding: 0;
+    border: var(--border-primary);
+    background-color: var(--color-background);
+
+    overflow: hidden;
+}
+
+#coursesModal[open] {
+    display: flex;
+    flex-direction: column;
+}
+
+#coursesModal::backdrop {
+    background-color: rgba(0, 0, 0, 0.6) !important;
+}
+
+#coursesModal > .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    flex-shrink: 0;
+
+    background-color: var(--color-background-muted);
+
+    padding: var(--spacing-24);
+
+    border-bottom: var(--border-primary);
+}
+
+#coursesModal > .header > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    gap: var(--spacing-8);
+
+    font-family: var(--font-family-orbitron);
+    color: var(--color-text-primary);
+}
+
+#coursesModal > .header > div > .icon {
+    color: var(--color-primary);
+}
+
+#coursesModal > .header .closeModal {
+    color: var(--color-text-primary);
+
+    cursor: pointer;
+
+    transition:
+            color 0.3s ease,
+            transform 0.3s ease;
+}
+
+#coursesModal > .header .closeModal:hover {
+    color: var(--color-primary);
+    transform: scale(1.05);
+}
+
+
+/* CONTEÚDO */
+
+#coursesModal > .content {
+    flex: 1;
+    min-height: 0;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--spacing-24);
+
+    width: 100%;
+
+    padding: var(--spacing-24);
+
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-border-primary) transparent;
+}
+
+
+/* SCROLL */
+
+#coursesModal > .content::-webkit-scrollbar {
+    width: 6px;
+}
+
+#coursesModal > .content::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+#coursesModal > .content::-webkit-scrollbar-thumb {
+    background-color: var(--color-border-primary);
+    border-radius: 999px;
+}
+
+#coursesModal > .content::-webkit-scrollbar-thumb:hover {
+    background-color: var(--color-primary);
+}
+
+
+/* PLATAFORMAS */
+
+#coursesModal > .content > .plataform {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: var(--spacing-16);
+
+    background-color: var(--color-foreground);
+
+    border: var(--border-primary);
+    border-radius: var(--radius-12);
+
+    padding: var(--spacing-12);
+
+    color: var(--color-text-primary);
+}
+
+#coursesModal > .content > .plataform.alura {
+    border-top: 3px solid #001453;
+}
+
+#coursesModal > .content > .plataform.descomplica {
+    border-top: 3px solid #03E591;
+}
+
+#coursesModal > .content > .plataform.microsoft {
+    position: relative;
+    overflow: hidden;
+
+    border-radius: var(--radius-12);
+}
+
+#coursesModal > .content > .plataform.microsoft::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    border-radius: inherit;
+    padding: 3px;
+
+    background: linear-gradient(
+            to right,
+            #F25022 0%,
+            #F25022 25%,
+            #7FBA00 25%,
+            #7FBA00 50%,
+            #00A4EF 50%,
+            #00A4EF 75%,
+            #FFB900 75%,
+            #FFB900 100%
+    );
+
+    /* deixa apenas a "borda" */
+    -webkit-mask:
+            linear-gradient(#fff 0 0) content-box,
+            linear-gradient(#fff 0 0);
+
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+
+    /* mostra somente a parte superior */
+    clip-path: inset(0 0 calc(100% - 8px) 0);
+
+    pointer-events: none;
+}
+
+#coursesModal > .content > .plataform.fiberschool {
+    border-top: 3px solid #273D63;
+}
+
+
+/* LOGOS */
+
+#coursesModal > .content > .plataform > .containerImage {
+    width: 40%;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+}
+
+#coursesModal > .content > .plataform > .containerImage > img {
+    max-width: 100%;
+    max-height: 100%;
+
+    width: auto;
+    height: auto;
+
+    object-fit: contain;
+
+    display: block;
+}
+
+
+/* CURSOS */
+
+#coursesModal > .content > .plataform > .courses {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+
+    gap: var(--spacing-8);
+}
+
+#coursesModal > .content > .plataform > .courses > .course {
+    display: flex;
+    align-items: center;
+
+    gap: var(--spacing-8);
+}
+
+#coursesModal .circle {
+    width: 6px;
+    height: 6px;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background-color: var(--color-background-muted);
+}
+
+#coursesModal > .content > .plataform > .courses > .course > span {
+    font-family: var(--font-family-space);
+    font-size: 10px;
+}
+
+@media (max-width: 768px) {
+    #coursesModal > .content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #coursesModal > .content > .plataform.microsoft {
+        display: none;
+    }
+}
