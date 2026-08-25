@@ -1,0 +1,21 @@
+#headerSection {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: var(--spacing-16);
+    flex-wrap: wrap;
+}
+
+#headerSection h1 {
+    color: var(--color-text-primary);
+    font-size: var(--font-size-24);
+    font-family: var(--font-family-orbitron);
+    font-weight: 600;
+    
+}
+
+#headerSection h2 {
+    font-size: var(--font-size-16);
+    font-family: var(--font-family-geist);
+    color: var(--color-text-secondary);
+}

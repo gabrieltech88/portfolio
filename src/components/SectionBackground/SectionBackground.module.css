@@ -1,0 +1,13 @@
+.sectionBackground {
+    border-radius: var(--radius-16);
+    border: var(--border-primary);
+    background-color: var(--color-background-section);
+    padding: 3rem;
+    scroll-margin-top: 100px;
+}
+
+@media (max-width: 768px) { 
+    .sectionBackground {
+        padding: var(--spacing-24);
+    }
+}

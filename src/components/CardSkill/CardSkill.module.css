@@ -1,0 +1,72 @@
+#cardSkill {
+    display: flex;
+    flex-direction: column;
+    padding: var(--spacing-24);
+    border: var(--border-primary);
+    border-radius: var(--spacing-12);
+    background-color: var(--color-foreground);
+    min-width: 0;
+    width: 100%;
+}
+
+#cardSkill:hover {
+    background-color: var(--color-background-hover-primary);
+    border: 1px solid var(--color-border-hover-primary);
+}
+
+#cardSkill .containerIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius-8);
+    background-color: var(--color-primary-overlay);
+    width: 2.5rem;
+    height: 2.5rem;
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-16);
+}
+
+#cardSkill .titleCardSkill {
+    color: var(--color-text-primary);
+    font-size: var(--font-size-16);
+    font-family: var(--font-family-orbitron);
+    margin-bottom: var(--spacing-12);
+}
+
+#cardSkill .contentCardSkill {
+    margin-bottom: var(--spacing-24);
+    color: var(--color-text-secondary);
+    font-size: var(--font-size-16);
+    font-family: var(--font-family-geist);
+    line-height: var(--spacing-24);
+}
+
+#cardSkill .skillsCard {
+    margin-top: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--spacing-8);
+}
+
+#cardSkill .skillsCard .skill {
+    background-color: var(--color-background-muted);
+    font-size: var(--font-size-12);
+    color: var(--color-text-muted);
+    border-radius: var(--radius-4);
+    padding: var(--spacing-4) var(--spacing-8);
+    font-family: var(--font-family-space);
+}
+
+
+@media (max-width: 768px) {
+    #cardSkill .contentCardSkill {
+        font-size: var(--font-size-12);
+        line-height: var(--spacing-16);
+    }
+
+    #cardSkill .skillsCard {
+        display: none;
+    }
+}
+

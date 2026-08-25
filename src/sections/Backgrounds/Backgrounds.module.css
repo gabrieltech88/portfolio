@@ -1,0 +1,131 @@
+.backgrounds {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.backgrounds .degreesAndLanguages {
+    display: grid;
+    grid-template-columns: repeat(23, 1fr);
+    gap: 3rem;
+}
+
+.backgrounds .degreesAndLanguages > .degrees {
+    grid-column: span 15;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-32);
+}
+
+.backgrounds .degreesAndLanguages > .languages {
+    grid-column: span 8;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-32);
+}
+
+.backgrounds .degreesAndLanguages > .languages > .cardsLanguages {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-12);
+}
+
+
+.backgrounds .degreesAndLanguages  .header {
+    display: flex;
+    flex-direction: row;
+    gap: var(--radius-12);
+    align-items: center;
+}
+
+.backgrounds .degreesAndLanguages  .header .containerIcon {
+    display: flex;
+    background-color: var(--color-border-primary);
+    height: 2rem;
+    width: 2rem;
+    border-radius: var(--radius-8);
+    color: var(--color-text-primary);
+    align-items: center;
+    justify-content: center;
+}
+
+.backgrounds .degreesAndLanguages  .header > h1 {
+    font-size: var(--font-size-24);
+    font-weight: 600;
+    font-family: var(--font-family-orbitron);
+    color: var(--color-text-primary);
+}
+
+.backgrounds .courses {
+    padding-top: 3rem;
+    border-top: 1px solid var(--color-border-secondary);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-32);
+}
+
+.backgrounds .courses > .header  {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-8);
+}
+
+.backgrounds .courses > .header > h2 {
+    color: var(--color-text-primary);
+    font-weight: 500;
+    font-size: var(--font-size-20);
+    font-family: var(--font-family-orbitron);
+    line-height: 28px;
+}
+
+.backgrounds .courses > .header > h3 {
+    color: var(--color-text-secondary);
+    font-size: var(--font-size-16);
+    font-family: var(--font-family-geist);
+    line-height: 24px;
+}
+
+.backgrounds .courses .cardsCourses {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: var(--spacing-16);
+}
+
+.backgrounds .linkToPageCourses {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-8);
+    font-size: var(--font-size-16);
+    font-weight: 600;
+    font-family: var(--font-family-geist);
+    color: var(--color-primary);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    background-color: transparent;
+    border: none;
+    width: fit-content;
+}
+
+.backgrounds .linkToPageCourses:hover {
+    gap: var(--spacing-16);
+    color: #fd8024;
+}
+
+@media (max-width: 768px) { 
+    .backgrounds {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .backgrounds .degreesAndLanguages {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .backgrounds .courses .cardsCourses {
+        display: flex;
+        flex-direction: column;
+    }
+}
+

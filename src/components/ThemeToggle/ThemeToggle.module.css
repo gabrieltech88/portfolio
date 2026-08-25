@@ -1,0 +1,12 @@
+.themeToggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background-color: var(--color-background-muted);
+    border: var(--border-primary);
+    color: var(--color-text-muted);
+}
