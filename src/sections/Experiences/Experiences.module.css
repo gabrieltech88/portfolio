@@ -30,6 +30,9 @@
     gap: var(--spacing-8);
     background-color: var(--color-primary-overlay);
     color: var(--color-primary);
+    lign-items: center;
+    justify-content: center ;
+    text-align: center;
     font-family: var(--font-family-geist);
     font-size: var(--font-size-12);
     border-radius: 999px;

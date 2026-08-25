@@ -1,25 +1,4 @@
 :root {
-    --color-background: #121315;
-    --color-background-muted: #292a2c;
-    --color-background-section: #1B1C1E;
-    --color-foreground: #0D0E10;
-    
-    --color-primary: #FF6B00;
-    
-    --color-text-white: #fff;
-    --color-text-primary: #E3E2E5;
-    --color-text-secondary: #b5b4ba;
-    --color-text-muted: #98999F;
-    --color-text-muted-50: rgba(152, 153, 159, 0.5);
-    
-    --color-border-primary: #343537;
-    --color-border-secondary: rgba(255, 255, 255, 0.1);
-    
-    --border-primary: 1px solid var(--color-border-primary);
-    --border-secondary: 1px solid var(--color-border-secondary);
-    
-    --color-primary-overlay: rgb(255, 107, 0, 0.1);
-    
     --spacing-4: 0.25rem;
     --spacing-8: 0.5rem;
     --spacing-12: 0.75rem;
@@ -46,4 +25,66 @@
     --font-size-20: 1.25rem;
    --font-size-24: 1.5rem;
     --font-size-32: 2rem;
+}
+
+[data-theme="dark"] {
+    --color-background: #121315;
+    --color-background-header: #121315;
+    --color-background-muted: #292a2c;
+    --color-background-section: #1B1C1E;
+    --color-foreground: #0D0E10;
+
+    --color-primary: #FF6B00;
+
+    --color-text-white: #fff;
+    --color-text-primary: #E3E2E5;
+    --color-text-secondary: #b5b4ba;
+    --color-text-muted: #98999F;
+    --color-text-muted-50: rgba(152, 153, 159, 0.5);
+
+    --color-border-primary: #343537;
+    --color-border-secondary: rgba(255, 255, 255, 0.1);
+
+    --border-primary: 1px solid var(--color-border-primary);
+    --border-secondary: 1px solid var(--color-border-secondary);
+    --color-text-button-primary: #fff;
+
+    --color-primary-overlay: rgb(255, 107, 0, 0.1);
+    
+    --color-background-hover-primary: transparent;
+    --color-background-hover-secondary: transparent;
+    --color-background-hover-muted: #121315;
+    --color-border-hover-primary: #343537;
+    --color-border-hover-secondary: #E3E2E5;
+}
+
+[data-theme="light"] {
+    --color-background: #f8f9fa;
+    --color-background-header: #fff;
+    --color-background-muted: #EDEEEF;
+    --color-background-section: #fff;
+    --color-foreground: #fff;
+
+    --color-primary: #FF6B00;
+
+    --color-text-white: #111827;
+    --color-text-primary: #111827;
+    --color-text-secondary: #4B5563;
+    --color-text-muted: #4B5563;
+    --color-text-muted-50: rgba(75, 85, 99, 0.7);
+
+    --color-border-primary: rgba(0, 0, 0, 0.08);
+    --color-border-secondary: rgba(0, 0, 0, 0.05);
+
+    --border-primary: 1px solid var(--color-border-primary);
+    --border-secondary: 1px solid var(--color-border-primary);
+
+    --color-primary-overlay: rgb(255, 107, 0, 0.1);
+    
+    --color-text-button-primary: #fff;
+    --color-background-hover-primary: rgba(0, 0, 0, 0.06);
+    --color-background-hover-secondary: #f6f6f6;
+    --color-background-hover-muted: #f6f6f6;
+    --color-border-hover-primary: rgba(0, 0, 0, 0.5);
+    --color-border-hover-secondary: #111827;
 }

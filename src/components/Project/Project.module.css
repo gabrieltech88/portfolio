@@ -13,6 +13,8 @@
     transform: translateY(-2px) scale(1.01);
     background-color: transparent;
     cursor: pointer;
+    background-color: var(--color-background-hover-primary);
+    border: 1px solid var(--color-border-hover-primary);
 }
 
 .project .content {
@@ -33,7 +35,7 @@
     color: var(--color-text-primary);
     font-size: var(--font-size-20);
     font-weight: 500;
-    font-family: var(--font-family-geist);
+    font-family: var(--font-family-orbitron);
     margin-bottom: var(--spacing-12);
 }
 
@@ -57,7 +59,7 @@
     border: var(--border-primary);
     border-radius: var(--radius-4);
     padding: var(--spacing-4) var(--spacing-8);
-    font-family: var(--font-family-orbitron);
+    font-family: var(--font-family-geist);
     font-size: 11px;
     color: var(--color-text-secondary);
     height: fit-content;

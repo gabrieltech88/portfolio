@@ -10,7 +10,8 @@
 }
 
 #cardSkill:hover {
-    background-color: transparent;
+    background-color: var(--color-background-hover-primary);
+    border: 1px solid var(--color-border-hover-primary);
 }
 
 #cardSkill .containerIcon {
@@ -28,7 +29,7 @@
 #cardSkill .titleCardSkill {
     color: var(--color-text-primary);
     font-size: var(--font-size-16);
-    font-family: var(--font-family-geist);
+    font-family: var(--font-family-orbitron);
     margin-bottom: var(--spacing-12);
 }
 
@@ -50,11 +51,11 @@
 
 #cardSkill .skillsCard .skill {
     background-color: var(--color-background-muted);
-    font-size: 10px;
+    font-size: var(--font-size-12);
     color: var(--color-text-muted);
     border-radius: var(--radius-4);
     padding: var(--spacing-4) var(--spacing-8);
-    font-family: var(--font-family-orbitron);
+    font-family: var(--font-family-space);
 }
 
 

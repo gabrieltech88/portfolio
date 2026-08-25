@@ -1,14 +1,25 @@
 import logo from "@/assets/gLogo.png";
+import logoDark from "@/assets/gLogoDark.png";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
-import { RiDownload2Line } from "react-icons/ri";
 import styles from "./Header.module.css";
+import {useContext} from "react";
+import {ThemeContext} from "@/context/ThemeContext.tsx";
+import ThemeToggle from "@/components/ThemeToggle/ThemeToggle.tsx";
 
 function Header() {
+    const context = useContext(ThemeContext);
+
+    if (!context) {
+        throw new Error("ThemeToggle deve estar dentro de ThemeProvider");
+    }
+
+    const { theme } = context;
+    
     return (
         <header id={styles.header}>
             <div>
-                <img src={logo} />
+                <img src={theme  === "dark" ? logo : logoDark } />
                 <div>
                     <span>Gabriel Ramos</span>
                     <span>Software Developer</span>
@@ -24,14 +35,14 @@ function Header() {
             </nav>
             <div>
                 <div>
-                    <a target="_blank" rel="noreferrer" className={styles.socialLinks}>
+                    <a href="https://github.com/gabrieltech88" target="_blank" rel="noreferrer" className={styles.socialLinks}>
                         <FaGithub size={20} className={styles.socialIcon}/>
                     </a>
-                    <a target="_blank" rel="noreferrer" className={styles.socialLinks}>
+                    <a href="https://www.linkedin.com/in/gabriel-ramos-a4524526a" target="_blank" rel="noreferrer" className={styles.socialLinks}>
                         <FaLinkedin size={20} className={styles.socialIcon}/>
                     </a>
                 </div>
-                <a className={styles.button}>Baixar Currículo <RiDownload2Line size={16} strokeWidth={0.875}/></a>
+                <ThemeToggle />
             </div>
         </header>
     )

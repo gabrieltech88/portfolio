@@ -10,7 +10,7 @@
 }
 
 .degree:hover {
-    background-color: #121315;
+    background-color: var(--color-background-hover-muted);
     
 }
 
@@ -94,7 +94,7 @@
 }
 
 .degreeLast:hover {
-    background-color: #121315;
+    background-color: var(--color-background-header);
     
 }
 

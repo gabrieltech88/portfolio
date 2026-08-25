@@ -12,7 +12,7 @@
 }
 
 .language:hover {
-    background-color: transparent;
+   background-color: var(--color-background-hover-secondary);;
 }
 
 .language > .isoCode {
@@ -36,7 +36,7 @@
 .language > div .country {
     font-size: var(--font-size-16);
     font-weight: 600;
-    color: #fff;
+    color: var(--color-text-white);
     font-family: var(--font-family-geist);
     line-height: var(--spacing-24);
     

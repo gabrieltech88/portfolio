@@ -19,24 +19,22 @@
 }
 
 .hero .heroContent span {
-    background-color: var(--color-primary-overlay);
     color: var(--color-primary);
     width: fit-content;
-    font-weight: 600;
+    font-weight: 400;
     font-size: var(--font-size-14);
-    padding: var(--spacing-4) var(--spacing-8);
-    border-radius: 0.375rem;
+    font-family: var(--font-family-space);
 }
 
 .hero .heroContent .heroTitle {
     font-size: var(--font-size-32);
     color: var(--color-text-white);
-    font-family: var(--font-family-geist);
+    font-family: var(--font-family-orbitron);
     font-weight: 600;
 }
 
 .hero .heroContent .heroSubtitle {
-    font-family: var(--font-family-geist);
+    font-family: var(--font-family-space);
     font-size: var(--font-size-20);
     color: var(--color-text-white);
     font-weight: 500;
@@ -44,7 +42,8 @@
 
 .hero .heroContent .heroText {
     font-family: var(--font-family-geist);
-    font-size: var(--font-size-20);
+    font-size: var(--font-size-16);
+    font-weight: 300;
     color: var(--color-text-secondary);
     line-height: 26px;
 }
@@ -58,12 +57,13 @@
 
 .hero .heroContent .containerHeroButtons a:nth-child(1) {
     background-color: var(--color-primary);
-    color: var(--color-text-white);
-    font-weight: 600;
-    font-size: var(--font-size-16);
+    color: var(--color-text-button-primary);
+    font-weight: 500;
+    font-size: var(--font-size-14);
     font-family: var(--font-family-geist);
-    padding: var(--spacing-8) var(--spacing-24); 
-    border-radius: var(--radius-8);
+    padding: var(--spacing-12) var(--spacing-24); 
+    border-radius: 999px;
+    cursor: pointer;
 }
 
 .hero .heroContent .containerHeroButtons a:nth-child(1):hover {
@@ -71,18 +71,25 @@
 }
 
 .hero .heroContent .containerHeroButtons a:nth-child(2) {
-    border-radius: var(--radius-8);
-    border: var(--border-primary);
-    background-color: var(--color-background-muted);
-    padding: var(--spacing-8) var(--spacing-24);
+    background-color: transparent;
+    padding: var(--spacing-12) var(--spacing-24);
     color: var(--color-text-primary);
-    font-weight: 600;
-    font-size: var(--font-size-16);
+    font-weight: 500;
+    font-size: var(--font-size-14);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-8);
     font-family: var(--font-family-geist);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 999px;
+    border: 1px solid var(--color-border-hover-secondary);
 }
 
 .hero .heroContent .containerHeroButtons a:nth-child(2):hover {
-    background-color: var(--color-border-primary);
+  
+    gap: var(--spacing-16);
 }
 
 .hero .heroContent .containerHeroSocial {
@@ -151,14 +158,20 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    font-family: Serif;
+    font-family: var(--font-family-geist);
     color: var(--color-text-muted);
     font-size: var(--font-size-12);
+    
 }
 
 .hero .heroImage img {
+    
     width: 100%;
-    height: 375.75px;
+    object-fit: cover;
+    display: block;
+    height: 100%;
+    border-bottom-left-radius: var(--radius-12);
+    border-bottom-right-radius: var(--radius-12);
 }
 
 
