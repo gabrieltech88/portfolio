@@ -20,6 +20,7 @@ interface CoursesModalProps {
 
 function CoursesModal({dialogRef}: CoursesModalProps) {
     const aluraCourses = [
+        "Arquitetura .NET: da codificação ao deploy na nuvem",
         "Tópicos avançados em .NET",
         "Microsserviços e RabbitMQ com .NET",
         "ASP.NET Core: aplicações com C#, .NET, Entity Framework e LINQ",
@@ -49,7 +50,8 @@ function CoursesModal({dialogRef}: CoursesModalProps) {
     ]
     const descomplicaCourses = [
         "User Experience",
-        "Programming Basics"
+        "Programming Basics",
+        "Object-Oriented Developer"
     ]
 
     const context = useContext(ThemeContext);
