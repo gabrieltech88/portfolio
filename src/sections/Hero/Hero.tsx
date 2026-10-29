@@ -2,7 +2,7 @@ import {FaArrowRight, FaGithub, FaLinkedin} from "react-icons/fa";
 import {HiOutlineMail} from "react-icons/hi";
 import SectionBackground from "@/components/SectionBackground/SectionBackground.tsx";
 import styles from "./Hero.module.css";
-import image from "@/assets/IMG_7302.png"
+import image from "@/assets/IMG_7302.webp"
 
 function Hero() {
     return (

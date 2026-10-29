@@ -1,5 +1,4 @@
 import styles from "./Project.module.css";
-import { FaArrowRight } from "react-icons/fa";
 
 interface ProjectProps {
     title: string,
@@ -7,7 +6,6 @@ interface ProjectProps {
     stack: string[],
     image: string,
     type: string,
-    link?: string,
 }
 
 function Project(props: ProjectProps) {
@@ -22,7 +20,6 @@ function Project(props: ProjectProps) {
                         <span className={styles.stack}>{item}</span>
                     ))}
                 </div>
-                <a>Detalhes do projeto <FaArrowRight size={16}/></a>
             </div>
             <div className={styles.containerImage}>
                 <img src={props.image} alt="" className={styles.image}/>
