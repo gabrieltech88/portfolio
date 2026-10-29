@@ -1,0 +1,24 @@
+
+# Permitir rastreamento por mecanismos de busca
+User-agent: *
+Allow: /
+
+# Bloquear rastreamento para treinamento de IA
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+# Permitir descoberta pelas buscas de IA
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+# Sitemap
+Sitemap: https://devgabrielramos.vercel.app/sitemap.xml
